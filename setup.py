@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="auto_video_cut",
-    version="0.0.1",
+    version="0.0.2",
     author="Yasin Balcancı",
     author_email="ybalcanci@gmail.com",
     description="Cut unnecessary parts of a video",
