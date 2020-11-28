@@ -6,6 +6,8 @@ import wave
 import tempfile
 import shutil
 import numpy as np
+import tkinter
+from tkinter.filedialog import askopenfilename
 
 logger = logging.getLogger(__name__)
 
@@ -21,6 +23,13 @@ class Video:
         self.audio = self.video.audio
         self._tmpAudioFileName = 'temp.wav'
         self._audioPath = None
+
+    @staticmethod
+    def initViaFilePicker():
+        'https://stackoverflow.com/questions/3579568/choosing-a-file-in-python-with-simple-dialog'
+        tkinter.Tk().withdraw()  # we don't want a full GUI, so keep the root window from appearing
+        filename = askopenfilename()  # show an "Open" dialog box and return the path to the selected file
+        return Video(filename)
 
     def autoCut(self, outputPath: str='./output.mp4'):
         '''
