@@ -1,1 +1,7 @@
 **/*.mp4
+**/*.wav
+dist/*
+build/*
+.idea
+**/*.egg-info
+**/__pycache__
