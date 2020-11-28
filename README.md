@@ -10,3 +10,5 @@ from auto_video_cut import Video
 video = Video('sample.mp4')
 video.autoCut('sample-out.mp4')
 ```
+## Demo
+[Auto Video Cut Demo (auto_video_cut)](https://www.youtube.com/watch?v=K3UMgwTyAAs)
